@@ -18,7 +18,7 @@ struct ContentView: View {
             Spacer()
             Spacer()
         HStack {
-            Button("1") {
+            Button("1") { //button in wrong spot
                 
             }
             
@@ -28,7 +28,6 @@ struct ContentView: View {
             .foregroundColor(.black)
             .cornerRadius(10)
             .frame(maxWidth: .infinity, alignment: .center)
-            .padding(.trailing, 150)
             
             
             
@@ -40,16 +39,23 @@ struct ContentView: View {
             .background(Color.orange)
             .foregroundColor(.black)
             .cornerRadius(10)
+            .padding(.trailing, 75)
             
         }
-                
-                
+        Spacer()
+        Spacer()
+
+        Button("+") { //button in wrong spot
             
+        }
+        .padding(30)
+        .font(.system(size:40))
+        .background(Color.gray)
+        .foregroundColor(.black)
+        .cornerRadius(10)
         
             
-        Spacer()
-        Spacer()
-        Spacer()
+            Spacer()
         
     }
 }
