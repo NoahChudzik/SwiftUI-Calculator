@@ -1,3 +1,5 @@
+//: # xcode: set sdk=iOS
+
 //
 //  ContentView.swift
 //  Calculator
@@ -10,12 +12,29 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+            Text("My Calculator")
+                .font(.largeTitle)
         }
-        .padding()
+            Spacer()
+        Spacer()
+            HStack {
+                Button("1") {
+                    
+                }
+
+                .padding(30)
+                .font(.system(size: 40))
+                .background(Color.orange)
+                .foregroundColor(.black)
+                .cornerRadius(10)
+                .frame(maxWidth: .infinity, alignment: .center)
+                .padding(.trailing, 150)
+            }
+            
+        Spacer()
+        Spacer()
+        Spacer()
+        
     }
 }
 
