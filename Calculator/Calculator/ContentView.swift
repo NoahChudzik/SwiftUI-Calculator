@@ -19,7 +19,7 @@ struct ContentView: View {
             Spacer()
         HStack {
             Button("1") { //button in wrong spot
-                
+                input(input: 1)
             }
             
             .padding(30)
@@ -32,6 +32,7 @@ struct ContentView: View {
             
             
             Button("2") { //button currently in wrong spot
+                input(input: 2)
                 
             }
             .padding(30)
@@ -42,10 +43,10 @@ struct ContentView: View {
             .padding(.trailing, 75)
             
         }
-        Spacer()
-        Spacer()
 
         Button("+") { //button in wrong spot
+            
+            operate(operation: .add)
             
         }
         .padding(30)
