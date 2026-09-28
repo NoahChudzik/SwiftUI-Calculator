@@ -14,12 +14,13 @@ struct ContentView: View {
         VStack {
             Text("My Calculator")
                 .font(.largeTitle)
+    
         }
             Spacer()
             Spacer()
         HStack {
             Button("1") { //button in wrong spot
-                input(input: 1)
+            
             }
             
             .padding(30)
@@ -32,7 +33,6 @@ struct ContentView: View {
             
             
             Button("2") { //button currently in wrong spot
-                input(input: 2)
                 
             }
             .padding(30)
@@ -46,8 +46,6 @@ struct ContentView: View {
 
         Button("+") { //button in wrong spot
             
-            operate(operation: .add)
-            
         }
         .padding(30)
         .font(.system(size:40))
@@ -57,6 +55,15 @@ struct ContentView: View {
         
             
             Spacer()
+        
+        Button("=") {
+
+        }
+        .padding(30)
+        .font(.system(size:40))
+        .background(Color.gray)
+        .foregroundColor(.black)
+        .cornerRadius(10)
         
     }
 }
