@@ -15,3 +15,29 @@ struct CalculatorApp: App {
         }
     }
 }
+
+enum Operation {
+    case add
+    case subtract
+    case multiply
+    case divide
+}
+
+enum Token {
+    case number (Double)
+    case operation (Operation)
+}
+
+var tokens: [Token] = []
+
+
+
+func input (input: Int ) {
+    
+}
+
+func operation (operation: Operation) {
+    
+}
+
+
